@@ -12,7 +12,7 @@
       </thead>
       <tbody>
         <tr v-for="metric in healthMetrics" :key="metric.id">
-          <th>{{ metric.date }}</th>
+          <th>{{ metric.date | formatDate }}</th>
           <td>{{ metric.weight_kg }}</td>
           <td>{{ metric.fat_percentage }}</td>
           <td>{{ metric.muscle_percantage }}</td>
