@@ -84,7 +84,7 @@ export default {
     const { data: healthMetric} = await this.$supabase
       .from('health_metric')
       .select('*')
-      .order('id', { ascending: false })
+      .order('date', { ascending: false })
       .limit(1)
       .single()
     if (healthMetric) {
